@@ -1,11 +1,11 @@
 {
 "UDL-SC_version" : "0.1", 
-"name" : "AccessControlEnumerable", 
-"creation_date":"11/03/2022",
+"name" : "contextMock",  
+"creation_date":"11/03/2018",
 "Business Perspective": {
     "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
-	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "", "ContractGasPrice":""},
-			"Princing" :{" Gaslimit": "", "tokenPrice": "234.56 USD"},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "1185924  ", "ContractGasPrice":"1185924  "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
 			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
 	},
 	"participants" : {
@@ -29,41 +29,34 @@
 },
 "operationalPerspective":{
 	"Functions" : [
-	{"name": "supportsInterface",
+	{"name": "msgSender",
 	"Type": "public",
 	"scope" : "",
-	"description": "supports Interface",
-	"inputs":[{"name": "interfaceId", "Type": "bytes4" }],
+	"description": "msgSender",
+	"inputs":[{"name": "", "Type": "" }],
 	"outputs": [{"name": "" , "Type": "" }]
 	},
-	{"name": "getRoleMember",
+	{"name": "msgData",
 	"Type": "public",
 	"scope" : "",
-	"description": "get Role Member",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "index", "Type": "uint256" }],
-	"outputs": [{"name": "account" , "Type": "adress" }]
+	"description": "msgData",
+	"inputs":[{"name": "integerValue", "Type": "uint256" },{"name": "stringValue", "Type": "string memory" }], ,  
+	"outputs": [{"name": "" , "Type": "" }]
 	},
-	{"name": "getRoleMemberCount",
+	{"name": "ContextMockCaller",
 	"Type": "public",
 	"scope" : "",
-	"description": "get Role MemberCount",
-	"inputs":[{"name": "role", "Type": "bytes32" }],
-	"outputs": [{"name": "index" , "Type": "uint256" }]
-	},
-	{"name": "_grantRole",
-	"Type": "internal",
-	"scope" : "",
-	"description": "_grantRole",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
+	"description": "ContextMockCaller",
+	"inputs":[{"name": "", "Type": "" }],
 	"outputs": [{"name": "" , "Type": "" }]
 	},
-	{"name": "_revokeRole",
-	"Type": "internal",
+	{"name": "callData",
+	"Type": "public",
 	"scope" : "",
-	"description": "_revokeRole",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
+	"description": "callData",
+	"inputs":[{"name": "", "Type": "" }],
 	"outputs": [{"name": "" , "Type": "" }]
-	}   ],
+	}],
 	"Events": [
 	{"name": "",
 	"Type": "",

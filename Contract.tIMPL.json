@@ -1,13 +1,12 @@
 {
 "UDL-SC_version" : "0.1", 
-"name" : "AccessControlEnumerable", 
-"creation_date":"11/03/2022",
+"name" : "Contract.t", 
+"creation_date":"11/03/2018",
 "Business Perspective": {
     "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
-	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "", "ContractGasPrice":""},
-			"Princing" :{" Gaslimit": "", "tokenPrice": "234.56 USD"},
+	"QOS":{ "service level": { "latency": "1ms", "gasConsomation": "1185924  ", "ContractGasPrice":"1185924  "},
+			"Princing" :{" Gaslimit": "266600", "tokenPrice": "234.56 USD"},
 			"security" : {"signed": "", "tested": "", "link":"","description" : ""}
-	},
 	"participants" : {
 		"provider":"",
 		"FutureUserType":""
@@ -29,41 +28,20 @@
 },
 "operationalPerspective":{
 	"Functions" : [
-	{"name": "supportsInterface",
+	{"name": "setUp",
 	"Type": "public",
 	"scope" : "",
-	"description": "supports Interface",
-	"inputs":[{"name": "interfaceId", "Type": "bytes4" }],
+	"description": "setUp",
+	"inputs":[{"name": "", "Type": "" }],
 	"outputs": [{"name": "" , "Type": "" }]
 	},
-	{"name": "getRoleMember",
+	{"name": "testExample",
 	"Type": "public",
 	"scope" : "",
-	"description": "get Role Member",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "index", "Type": "uint256" }],
-	"outputs": [{"name": "account" , "Type": "adress" }]
-	},
-	{"name": "getRoleMemberCount",
-	"Type": "public",
-	"scope" : "",
-	"description": "get Role MemberCount",
-	"inputs":[{"name": "role", "Type": "bytes32" }],
-	"outputs": [{"name": "index" , "Type": "uint256" }]
-	},
-	{"name": "_grantRole",
-	"Type": "internal",
-	"scope" : "",
-	"description": "_grantRole",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
+	"description": "testExample",
+	"inputs":[{"name": "", "Type": "" }],
 	"outputs": [{"name": "" , "Type": "" }]
-	},
-	{"name": "_revokeRole",
-	"Type": "internal",
-	"scope" : "",
-	"description": "_revokeRole",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
-	"outputs": [{"name": "" , "Type": "" }]
-	}   ],
+	}],
 	"Events": [
 	{"name": "",
 	"Type": "",

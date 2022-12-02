@@ -1,6 +1,6 @@
 {
 "UDL-SC_version" : "0.1", 
-"name" : "AccessControlEnumerable", 
+"name" : "AccessControlMock", 
 "creation_date":"11/03/2022",
 "Business Perspective": {
     "Legal":{ "name": "" , "type":"" ,"link":"","description" : ""},
@@ -29,41 +29,22 @@
 },
 "operationalPerspective":{
 	"Functions" : [
-	{"name": "supportsInterface",
+	{"name": "setRoleAdmin",
 	"Type": "public",
 	"scope" : "",
-	"description": "supports Interface",
-	"inputs":[{"name": "interfaceId", "Type": "bytes4" }],
+	"description": "setRoleAdmin",
+	"inputs":[{"name": "roleId", "Type": "bytes32" },{"name": "adminRoleId", "Type": "bytes32" }],
 	"outputs": [{"name": "" , "Type": "" }]
-	},
-	{"name": "getRoleMember",
+	} ,
+	{"name": "senderProtected",
 	"Type": "public",
 	"scope" : "",
-	"description": "get Role Member",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "index", "Type": "uint256" }],
-	"outputs": [{"name": "account" , "Type": "adress" }]
-	},
-	{"name": "getRoleMemberCount",
-	"Type": "public",
-	"scope" : "",
-	"description": "get Role MemberCount",
-	"inputs":[{"name": "role", "Type": "bytes32" }],
-	"outputs": [{"name": "index" , "Type": "uint256" }]
-	},
-	{"name": "_grantRole",
-	"Type": "internal",
-	"scope" : "",
-	"description": "_grantRole",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
+	"description": "senderProtected",
+	"inputs":[{"name": "roleId", "Type": "bytes32" }],
 	"outputs": [{"name": "" , "Type": "" }]
-	},
-	{"name": "_revokeRole",
-	"Type": "internal",
-	"scope" : "",
-	"description": "_revokeRole",
-	"inputs":[{"name": "role", "Type": "bytes32" },{"name": "account", "Type": "address" }],
-	"outputs": [{"name": "" , "Type": "" }]
-	}   ],
+	} 
+	
+	],
 	"Events": [
 	{"name": "",
 	"Type": "",
